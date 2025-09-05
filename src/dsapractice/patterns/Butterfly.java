@@ -1,3 +1,5 @@
+package dsapractice.patterns;
+
 public class Butterfly {
     private static void printButterflyPattern(int n) {
 

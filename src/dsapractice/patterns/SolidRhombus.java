@@ -1,3 +1,5 @@
+package dsapractice.patterns;
+
 public class SolidRhombus {
     private static void printSolidRhombus(int n) {
         for (int line = 1; line <= n; line++) {

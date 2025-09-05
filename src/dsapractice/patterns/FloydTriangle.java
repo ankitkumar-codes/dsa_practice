@@ -1,3 +1,5 @@
+package dsapractice.patterns;
+
 public class FloydTriangle {
     private static void printFloydTriangle(int n) {
         int number = 1;

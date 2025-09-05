@@ -1,3 +1,5 @@
+package dsapractice.patterns;
+
 public class RotatedHalfPyramid {
     private static void printRotatedPyramid(int n) {
         for (int line = 1; line <= n; line++) {

@@ -1,3 +1,5 @@
+package dsapractice.patterns;
+
 public class InvertedHalfNoPyramid {
     private static void printInvertedHalfNoPyrami(int n) {
         for (int line = 0; line < n; line++) {

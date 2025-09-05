@@ -1,3 +1,5 @@
+package dsapractice.patterns;
+
 public class ZeroOneTriangle {
     private static void printZeroOneTriangle(int n) {
         for (int line = 1; line <= n; line++) {
