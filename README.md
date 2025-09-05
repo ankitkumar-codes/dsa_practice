@@ -1,1 +1,2 @@
-# This is dsa practice repo
+# This is a repo of practicing dsa
+
