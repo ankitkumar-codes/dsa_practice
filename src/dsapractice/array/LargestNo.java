@@ -2,7 +2,7 @@ package dsapractice.array;
 
 public class LargestNo {
     private static int findLargestNo(int arr[]) {
-        int largestNo = Integer.MIN_VALUE;
+        int largestNo = Integer.MIN_VALUE; // - infinity
         for (int i = 0; i < arr.length; i++) {
             if (arr[i] > largestNo) {
                 largestNo = arr[i];
