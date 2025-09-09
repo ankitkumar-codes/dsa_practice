@@ -4,18 +4,16 @@ public class BinarySearch {
     private static int binarySearch(int arr[], int key) {
         int beg = 0;
         int end = arr.length-1;
-        int mid = (beg+end)/2;
 
         while (beg <= end) {
+            int mid = (beg+end)/2;
             if (key == arr[mid]) {
                 return mid;
-            } else if (key > arr[mid]) {
+            } else if (key > arr[mid]) { // element at right
                 beg = mid + 1;
-                mid = (beg+end)/2;
 
-            }else {
+            }else { // element at left
                 end = mid - 1;
-                mid = (beg+end)/2;
             }
         }
         return -1;
