@@ -2,6 +2,18 @@
   <img src="https://github.com/ankitkumar-codes/dsa_practice/assets/your-banner-id/dsa-banner.png" alt="DSA Practice Banner" width="800"/>
 </p>
 
+<p align="center">
+  <img src="https://streak-stats.demolab.com?user=ankitkumar-codes&theme=dark&hide_border=true" alt="GitHub Streak"/>
+</p>
+
+<p align="center">
+  <img src="https://github-readme-stats.vercel.app/api?username=ankitkumar-codes&show_icons=true&theme=dark" alt="GitHub Stats"/>
+</p>
+
+<p align="center">
+  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=ankitkumar-codes&layout=compact&theme=dark" alt="Top Languages"/>
+</p>
+
 # 🧩 DSA Practice Repository  
 
 ![Language](https://img.shields.io/badge/Language-Java-blue)  
