@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="https://github.com/ankitkumar-codes/dsa_practice/assets/your-banner-id/dsa-banner.png" alt="DSA Practice Banner" width="800"/>
+  <img src="https://github.com/ankitkumar-codes/dsa_practice/assets/dsa-banner.png" alt="DSA Practice Banner" width="800"/>
 </p>
 
 <p align="center">
