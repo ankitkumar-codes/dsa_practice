@@ -1,4 +1,4 @@
-package dsapractice.array;
+package dsapractice.sorting;
 
 public class OptiizedBubbleSort {
     private static void bubbleSort(int arr[]) {
