@@ -2,18 +2,15 @@ package dsapractice.recursion;
 
 public class CheckSortedArray {
     private static boolean isArrSorted(int arr[], int index) {
-        // Base case: if we reach the last element, it's sorted
-        if (index == arr.length - 1) {
+        if (index == arr.length -1) {
             return true;
         }
-
-        // If current element is greater than next one, array is not sorted
-        if (arr[index] > arr[index + 1]) {
+        if (arr[index] < arr[index+1]) {
+            return isArrSorted(arr, index+1);
+        }else {
             return false;
-        }
 
-        // Recursive call for the rest of the array
-        return isArrSorted(arr, index + 1);
+        }
 
     }
 
