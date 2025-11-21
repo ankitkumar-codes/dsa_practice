@@ -9,6 +9,12 @@ public class Operations {
         return (n >> i) & 1;   // Right shift then AND with 1
     }
 
+    // Function to set ith bit
+    public static int setIthBit(int n, int i) {
+        int mask = 1 << i;
+        return n | mask;
+    }
+
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
 
@@ -19,7 +25,9 @@ public class Operations {
         int i = sc.nextInt();
 
         int bit = getIthBit(n, i);
+        int nbit = setIthBit(n, i);
 
         System.out.println("The " + i + "th bit of " + n + " is: " + bit);
+        System.out.println(nbit);
     }
 }
