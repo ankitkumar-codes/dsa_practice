@@ -11,14 +11,23 @@ public class Operations {
 
     // Function to set ith bit
     public static int setIthBit(int n, int i) {
-//        int mask = 1 << i;
-//        return n | mask;
-        String no = Integer.toBinaryString(n);
+        int mask = 1 << i;
+        return n | mask;
 
     }
     public static int clearIthBit(int n, int i) {
         int mask = ~(1 << i);
         return n & mask;
+    }
+
+    public static int updateIthBit(int n, int i, int bit) {
+        if (bit == 0) {
+            int mask = ~(1 << i);
+            return n & mask;
+        }else {
+            int mask = 1 << i;
+            return n | mask;
+        }
     }
 
 
@@ -32,11 +41,13 @@ public class Operations {
         int i = sc.nextInt();
 
         int bit = getIthBit(n, i);
-        int nbit = setIthBit(n, i);
-        int cbit = clearIthBit(n, i);
+        int setBit = setIthBit(n, i);
+        int clearedBit = clearIthBit(n, i);
+        int updatedBit = updateIthBit(n, i, 0);
 
         System.out.println("The " + i + "th bit of " + n + " is: " + bit);
-        System.out.println(nbit);
-        System.out.println(cbit);
+        System.out.println("No after setting: " + setBit);
+        System.out.println("Cleared bit: " + clearedBit);
+        System.out.println("Bit after updation: " + updatedBit);
     }
 }
