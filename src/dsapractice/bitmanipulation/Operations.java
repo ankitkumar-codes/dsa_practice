@@ -30,6 +30,11 @@ public class Operations {
         }
     }
 
+    private static int clearIBits(int n, int i) {
+        int bitMask = (-1) << i;
+        return n & bitMask;
+    }
+
 
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
@@ -45,9 +50,10 @@ public class Operations {
         int clearedBit = clearIthBit(n, i);
         int updatedBit = updateIthBit(n, i, 0);
 
-        System.out.println("The " + i + "th bit of " + n + " is: " + bit);
-        System.out.println("No after setting: " + setBit);
-        System.out.println("Cleared bit: " + clearedBit);
-        System.out.println("Bit after updation: " + updatedBit);
+//        System.out.println("The " + i + "th bit of " + n + " is: " + bit);
+//        System.out.println("No after setting: " + setBit);
+//        System.out.println("Cleared bit: " + clearedBit);
+//        System.out.println("Bit after updation: " + updatedBit);
+        System.out.println("After clearing i bits: " + clearIBits(n, i));
     }
 }
