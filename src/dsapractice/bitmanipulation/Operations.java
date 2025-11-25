@@ -35,6 +35,13 @@ public class Operations {
         return n & bitMask;
     }
 
+    private static int clearBitsInRange(int n, int i, int j) {
+        int a = ((~0)<<(j+1));
+        int b = (1<<i)-1;
+        int bitMask = a/b;
+        return n & bitMask;
+    }
+
 
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
@@ -49,11 +56,13 @@ public class Operations {
         int setBit = setIthBit(n, i);
         int clearedBit = clearIthBit(n, i);
         int updatedBit = updateIthBit(n, i, 0);
+        int clearRangeBits = clearBitsInRange(n, 2, 7);
 
 //        System.out.println("The " + i + "th bit of " + n + " is: " + bit);
 //        System.out.println("No after setting: " + setBit);
 //        System.out.println("Cleared bit: " + clearedBit);
 //        System.out.println("Bit after updation: " + updatedBit);
-        System.out.println("After clearing i bits: " + clearIBits(n, i));
+//        System.out.println("After clearing i bits: " + clearIBits(n, i));
+        System.out.println("After clearing bits in range: " + clearRangeBits);
     }
 }
