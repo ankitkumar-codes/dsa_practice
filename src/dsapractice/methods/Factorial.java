@@ -1,6 +1,7 @@
 package dsapractice.methods;
 
-public class Factorial {
+public class
+Factorial {
     protected static long calculateFactorial(int n) {
         long product = 1;
         for (int i = n; i > 1; i--) {
