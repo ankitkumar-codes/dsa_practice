@@ -41,6 +41,7 @@ public class Operations {
             bitMask = clearIthBit(bitMask, k);
         }
 
+
         return n & bitMask;
     }
 
